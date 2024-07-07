@@ -36,6 +36,7 @@ Overview
 This project aims to develop a machine learning-based virtual doctor capable of providing preliminary diagnoses and treatment recommendations based on user inputs, such as symptoms, medical history, and other relevant health information.
 
 Table of Contents
+
 Overview
 Technologies Used
 Project Contribution
@@ -46,8 +47,12 @@ Installation
 Usage
 Testing
 License
+
+
 Technologies Used
+
 Software Technologies
+
 Programming Languages: Python, JavaScript
 Machine Learning Frameworks: TensorFlow, PyTorch, Scikit-learn
 NLP Libraries: NLTK, SpaCy, Transformers (Hugging Face)
@@ -58,7 +63,9 @@ APIs and Integration: RESTful APIs, OAuth/JWT
 Development Tools: PyCharm, Visual Studio Code, Jupyter Notebook, Git, GitHub, GitLab, Bitbucket
 Containerization and Orchestration: Docker, Kubernetes
 Monitoring and Logging: Prometheus, Grafana
+
 Hardware Technologies
+
 Development Environment:
 
 CPU: Quad-core or higher
@@ -220,6 +227,7 @@ Open your browser and navigate to http://localhost:3000
 
 Testing
 Testing Techniques
+
 Unit Testing: unittest, pytest
 Integration Testing: unittest, pytest, Postman
 System Testing: Selenium, Postman
@@ -232,5 +240,8 @@ Validation Testing: Manual validation with healthcare professionals
 A/B Testing: Google Optimize, Optimizely
 Compliance Testing: Manual audits, compliance checklists
 Model Testing: Scikit-learn, TensorFlow
+
+
 License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
