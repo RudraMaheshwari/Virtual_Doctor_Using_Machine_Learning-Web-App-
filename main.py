@@ -59,8 +59,10 @@ def index():
 def predict():
     if request.method=='POST':
         symptoms=request.form.get('symptoms')
-        user_symptoms = [s.strip() for s in symptoms.split(',')]
-        [sym.strip("[]' ") for sym in user_symptoms]
+        user_symptoms = [s.strip("[]' ") for s in symptoms.split(',')]
+        user_symptoms = [s for s in user_symptoms if s in symptoms_dict]
+        if not user_symptoms:
+            return render_template('index.html', error="No valid symptoms recognised. Please check your spelling and try again.")
         predicted_disease = get_predicted_value(user_symptoms)
 
         desc, pre, med, die, wrkout = helper(predicted_disease)
